@@ -74,8 +74,8 @@ jobs:
       run: |
         cd src && make defconfig
         sed -i '/CONFIG_DEFAULT/'d .config
-        sed -i '/CONFIG_PACKAGE_firewall4=y/ c CONFIG_PACKAGE_firewall4=n' .config
-        sed -i '/CONFIG_MODULE_DEFAULT_firewall4=y c CONFIG_MODULE_DEFAULT_firewall4=n' .config
+        #sed -i '/CONFIG_PACKAGE_firewall4=y/ c CONFIG_PACKAGE_firewall4=n' .config
+        #sed -i '/CONFIG_MODULE_DEFAULT_firewall4=y c CONFIG_MODULE_DEFAULT_firewall4=n' .config
         
         echo "----------"
         cat .config
